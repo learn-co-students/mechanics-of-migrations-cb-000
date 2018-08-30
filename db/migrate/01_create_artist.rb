@@ -1,5 +1,4 @@
-class CreateArtists < ActiveRecord::Migration
-
+class CreateArtist < ActiveRecord::Migration[5.0]
   def change
     create_table :artist do |t|
       t.string :name
@@ -7,7 +6,8 @@ class CreateArtists < ActiveRecord::Migration
       t.integer :age
       t.string :hometown
     end
-  # # this method executes when the migration is run
+  end
+  # # this method executes when you run the migration
   # # do
   # def up
   #
