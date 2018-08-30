@@ -1,25 +1,29 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
-    activemodel (5.0.0)
-      activesupport (= 5.0.0)
-    activerecord (5.0.0)
-      activemodel (= 5.0.0)
-      activesupport (= 5.0.0)
-      arel (~> 7.0)
-    activesupport (5.0.0)
+    actionmailer (0.6.1)
+      actionpack (>= 0.9.5)
+    actionpack (1.4.0)
+    activemodel (5.2.1)
+      activesupport (= 5.2.1)
+    activerecord (5.2.1)
+      activemodel (= 5.2.1)
+      activesupport (= 5.2.1)
+      arel (>= 9.0)
+    activesupport (5.2.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    arel (7.0.0)
+    arel (9.0.0)
     coderay (1.1.1)
-    concurrent-ruby (1.0.2)
+    concurrent-ruby (1.0.5)
     database_cleaner (1.5.3)
     diff-lcs (1.2.5)
-    i18n (0.7.0)
+    i18n (1.1.0)
+      concurrent-ruby (~> 1.0)
     method_source (0.8.2)
-    minitest (5.9.0)
+    minitest (5.11.3)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -27,7 +31,12 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
-    rake (11.2.2)
+    rails (0.9.5)
+      actionmailer (>= 0.6.1)
+      actionpack (>= 1.4.0)
+      activerecord (>= 1.6.0)
+      rake (>= 0.4.15)
+    rake (12.3.1)
     require_all (1.3.3)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
@@ -51,9 +60,9 @@ GEM
       sinatra (~> 1.0)
     slop (3.6.0)
     sqlite3 (1.3.11)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (2.0.5)
-    tzinfo (1.2.2)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -63,6 +72,7 @@ DEPENDENCIES
   activerecord
   database_cleaner
   pry
+  rails
   rake
   require_all
   rspec
@@ -70,4 +80,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   1.12.5
+   1.16.2

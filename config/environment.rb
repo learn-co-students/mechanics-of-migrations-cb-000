@@ -8,8 +8,9 @@ require 'date'
 require 'bundler/setup'
 Bundler.require
 
+connection = ActiveRecord::Base.establish_connection(
+  :adapter => 'sqlite3',
+  :database => 'db/atrists.sqlite'
+)
 
-# put the code to connect to the database here
-
-
-require_relative "../artist.rb"
+require_relative "../artists.rb"
